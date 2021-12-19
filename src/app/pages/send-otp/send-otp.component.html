@@ -1,0 +1,19 @@
+<section class="container text-center">
+  <div class="enter-number">
+      <h1 class="title">Enter 6 digit code</h1>
+    <div class="ref-data">
+      <p class="mb-2">Your code was sent to {{ telData.telNumber }}</p>
+      <p class="mb-2">รหัสชุด OTP : {{ telData.refOTP }}</p>
+    </div>
+    <div class="mt-4">
+      <ng-otp-input #ngOtpInput (input)="onOtpChange()" [config]="optionOTP"></ng-otp-input>
+    </div>
+  </div>
+  <app-next-page [item]="routeData"></app-next-page>
+  <div class="mt-4">
+    <span>Don't receive it yet?</span>&nbsp;<span class="send-again">Send again</span>
+  </div>
+  <div class="mt-4">
+   <span class="text-muted">Send again 60s</span>
+  </div>
+</section>

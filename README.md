@@ -4,11 +4,11 @@
 
 Added project build and dev server.
 
-## Run project dev server
+## Run project server
 ```
-npm run start:dev
+npm run start
 ```
-Navigate to *licalhost:4200*.
+Navigate to *localhost:4200*.
 
 ## Build project
 ```

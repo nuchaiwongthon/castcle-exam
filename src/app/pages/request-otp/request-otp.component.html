@@ -1,0 +1,23 @@
+<section class="container">
+  <div class="text-start header-request-otp">
+    <h2 class="title">
+      What's Your <br />
+      Telephone number ?
+    </h2>
+    <p class="description">Welcome to Castcle</p>
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <ng-select
+        [items]="countryCode"
+        [clearable]="false"
+        bindLabel="name"
+        bindValue="dialCode"
+        [(ngModel)]="selectedCountry">
+      </ng-select>
+    </div>
+    <input type="tel" class="form-control input-custom" [(ngModel)]="telInput" [disabled]="selectedCountry ? false: true" (input)="telFormat($event)"/>
+  </div>
+  <small>You'll use this email when you login and when you lose your password.</small>
+  <app-next-page [item]="routeData"></app-next-page>
+</section>

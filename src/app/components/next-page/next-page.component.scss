@@ -1,0 +1,25 @@
+@import "../../../styles/variables";
+
+.btn-next {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  .btn {
+    color: $white;
+    height: 53px;
+    margin: 10px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: $font-weight-default;
+    background: $cyan;
+    box-shadow: 0px 3px 17px $shadow;
+  }
+  .btn:disabled,
+  .btn[disabled] {
+    box-shadow: none;
+    border: $dark 1px solid;
+    background-color: $gray-dark;
+    color: $dark;
+  }
+}

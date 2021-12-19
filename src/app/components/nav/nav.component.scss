@@ -1,0 +1,16 @@
+@import "../../../styles/variables";
+.nav-custom {
+  align-items: center;
+  height: 53px;
+  .back-page {
+    border-radius: 50%;
+    margin-left: 5px;
+    transition: ease-in-out 200ms;
+    content: url(../../../assets/vectors/back_arrow.svg);
+    cursor: pointer;
+  }
+  .title-page {
+    font-size: 18px;
+    margin-left: 27px;
+  }
+}
